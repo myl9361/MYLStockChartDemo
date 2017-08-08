@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087D84DF9BA4607816608CD4 /* libPods-MYLStockDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 228543D54CCB535B4CAD9B20 /* libPods-MYLStockDemo.a */; };
 		23730FC61F39561C00B1B3BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23730FC51F39561C00B1B3BD /* main.m */; };
 		23730FC91F39561C00B1B3BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23730FC81F39561C00B1B3BD /* AppDelegate.m */; };
 		23730FCC1F39561C00B1B3BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23730FCB1F39561C00B1B3BD /* ViewController.m */; };
@@ -15,6 +16,23 @@
 		23730FD41F39561C00B1B3BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23730FD21F39561C00B1B3BD /* LaunchScreen.storyboard */; };
 		23730FDF1F39561C00B1B3BD /* MYLStockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23730FDE1F39561C00B1B3BD /* MYLStockDemoTests.m */; };
 		23730FEA1F39561C00B1B3BD /* MYLStockDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23730FE91F39561C00B1B3BD /* MYLStockDemoUITests.m */; };
+		23730FF91F39602400B1B3BD /* dataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23730FF81F39602400B1B3BD /* dataSource.plist */; };
+		2373102D1F398A5200B1B3BD /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2373102C1F398A5200B1B3BD /* Common.m */; };
+		237310301F398B3800B1B3BD /* StockDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2373102F1F398B3800B1B3BD /* StockDataModel.m */; };
+		237310331F39987900B1B3BD /* StockChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310321F39987900B1B3BD /* StockChatCell.m */; };
+		237310361F39A12900B1B3BD /* WYStockTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310351F39A12900B1B3BD /* WYStockTopBarView.m */; };
+		237310391F39A68600B1B3BD /* WYHorScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310381F39A68600B1B3BD /* WYHorScreenView.m */; };
+		237310561F39B52B00B1B3BD /* KLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2373103D1F39B52B00B1B3BD /* KLineChartView.m */; };
+		237310571F39B52B00B1B3BD /* KLineTipBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2373103F1F39B52B00B1B3BD /* KLineTipBoardView.m */; };
+		237310581F39B52B00B1B3BD /* MATipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310411F39B52B00B1B3BD /* MATipView.m */; };
+		237310591F39B52B00B1B3BD /* KLineListTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310431F39B52B00B1B3BD /* KLineListTransformer.m */; };
+		2373105A1F39B52B00B1B3BD /* TipBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310461F39B52B00B1B3BD /* TipBoardView.m */; };
+		2373105B1F39B52B00B1B3BD /* UIBezierPath+curved.m in Sources */ = {isa = PBXBuildFile; fileRef = 2373104A1F39B52B00B1B3BD /* UIBezierPath+curved.m */; };
+		2373105C1F39B52B00B1B3BD /* YKLineChartViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2373104D1F39B52B00B1B3BD /* YKLineChartViewBase.m */; };
+		2373105D1F39B52B00B1B3BD /* YKLineDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2373104F1F39B52B00B1B3BD /* YKLineDataSet.m */; };
+		2373105E1F39B52B00B1B3BD /* YKLineEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310511F39B52B00B1B3BD /* YKLineEntity.m */; };
+		2373105F1F39B52B00B1B3BD /* YKTimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310531F39B52B00B1B3BD /* YKTimeLineView.m */; };
+		237310601F39B52B00B1B3BD /* YKViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 237310551F39B52B00B1B3BD /* YKViewBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		228543D54CCB535B4CAD9B20 /* libPods-MYLStockDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYLStockDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23730FC11F39561C00B1B3BD /* MYLStockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYLStockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23730FC51F39561C00B1B3BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23730FC71F39561C00B1B3BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +70,44 @@
 		23730FE51F39561C00B1B3BD /* MYLStockDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYLStockDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23730FE91F39561C00B1B3BD /* MYLStockDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYLStockDemoUITests.m; sourceTree = "<group>"; };
 		23730FEB1F39561C00B1B3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23730FF71F39569500B1B3BD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		23730FF81F39602400B1B3BD /* dataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dataSource.plist; sourceTree = "<group>"; };
+		2373102A1F3989BB00B1B3BD /* PublicDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicDefine.h; sourceTree = "<group>"; };
+		2373102B1F398A5200B1B3BD /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		2373102C1F398A5200B1B3BD /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		2373102E1F398B3800B1B3BD /* StockDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockDataModel.h; sourceTree = "<group>"; };
+		2373102F1F398B3800B1B3BD /* StockDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockDataModel.m; sourceTree = "<group>"; };
+		237310311F39987900B1B3BD /* StockChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockChatCell.h; sourceTree = "<group>"; };
+		237310321F39987900B1B3BD /* StockChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockChatCell.m; sourceTree = "<group>"; };
+		237310341F39A12900B1B3BD /* WYStockTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStockTopBarView.h; sourceTree = "<group>"; };
+		237310351F39A12900B1B3BD /* WYStockTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStockTopBarView.m; sourceTree = "<group>"; };
+		237310371F39A68600B1B3BD /* WYHorScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHorScreenView.h; sourceTree = "<group>"; };
+		237310381F39A68600B1B3BD /* WYHorScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHorScreenView.m; sourceTree = "<group>"; };
+		2373103C1F39B52B00B1B3BD /* KLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLineChartView.h; sourceTree = "<group>"; };
+		2373103D1F39B52B00B1B3BD /* KLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLineChartView.m; sourceTree = "<group>"; };
+		2373103E1F39B52B00B1B3BD /* KLineTipBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLineTipBoardView.h; sourceTree = "<group>"; };
+		2373103F1F39B52B00B1B3BD /* KLineTipBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLineTipBoardView.m; sourceTree = "<group>"; };
+		237310401F39B52B00B1B3BD /* MATipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATipView.h; sourceTree = "<group>"; };
+		237310411F39B52B00B1B3BD /* MATipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATipView.m; sourceTree = "<group>"; };
+		237310421F39B52B00B1B3BD /* KLineListTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLineListTransformer.h; sourceTree = "<group>"; };
+		237310431F39B52B00B1B3BD /* KLineListTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLineListTransformer.m; sourceTree = "<group>"; };
+		237310451F39B52B00B1B3BD /* TipBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipBoardView.h; sourceTree = "<group>"; };
+		237310461F39B52B00B1B3BD /* TipBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipBoardView.m; sourceTree = "<group>"; };
+		237310491F39B52B00B1B3BD /* UIBezierPath+curved.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+curved.h"; sourceTree = "<group>"; };
+		2373104A1F39B52B00B1B3BD /* UIBezierPath+curved.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+curved.m"; sourceTree = "<group>"; };
+		2373104B1F39B52B00B1B3BD /* YKLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKLineChart.h; sourceTree = "<group>"; };
+		2373104C1F39B52B00B1B3BD /* YKLineChartViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKLineChartViewBase.h; sourceTree = "<group>"; };
+		2373104D1F39B52B00B1B3BD /* YKLineChartViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKLineChartViewBase.m; sourceTree = "<group>"; };
+		2373104E1F39B52B00B1B3BD /* YKLineDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKLineDataSet.h; sourceTree = "<group>"; };
+		2373104F1F39B52B00B1B3BD /* YKLineDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKLineDataSet.m; sourceTree = "<group>"; };
+		237310501F39B52B00B1B3BD /* YKLineEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKLineEntity.h; sourceTree = "<group>"; };
+		237310511F39B52B00B1B3BD /* YKLineEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKLineEntity.m; sourceTree = "<group>"; };
+		237310521F39B52B00B1B3BD /* YKTimeLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKTimeLineView.h; sourceTree = "<group>"; };
+		237310531F39B52B00B1B3BD /* YKTimeLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKTimeLineView.m; sourceTree = "<group>"; };
+		237310541F39B52B00B1B3BD /* YKViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKViewBase.h; sourceTree = "<group>"; };
+		237310551F39B52B00B1B3BD /* YKViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKViewBase.m; sourceTree = "<group>"; };
+		66E01C24B0AACFD2C72A2AF4 /* Pods-MYLStockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLStockDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYLStockDemo/Pods-MYLStockDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7EAB795E105B39B7B99DF190 /* Pods-MYLStockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLStockDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYLStockDemo/Pods-MYLStockDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				087D84DF9BA4607816608CD4 /* libPods-MYLStockDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +136,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BBC9348E8989986E46BE3CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				228543D54CCB535B4CAD9B20 /* libPods-MYLStockDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		23730FB81F39561C00B1B3BD = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +151,8 @@
 				23730FDD1F39561C00B1B3BD /* MYLStockDemoTests */,
 				23730FE81F39561C00B1B3BD /* MYLStockDemoUITests */,
 				23730FC21F39561C00B1B3BD /* Products */,
+				4361985216EBF8F308F3054A /* Pods */,
+				0BBC9348E8989986E46BE3CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +169,30 @@
 		23730FC31F39561C00B1B3BD /* MYLStockDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2373103A1F39B52B00B1B3BD /* KLineView */,
+				237310481F39B52B00B1B3BD /* KTimeView */,
+				23730FF81F39602400B1B3BD /* dataSource.plist */,
 				23730FC71F39561C00B1B3BD /* AppDelegate.h */,
 				23730FC81F39561C00B1B3BD /* AppDelegate.m */,
 				23730FCA1F39561C00B1B3BD /* ViewController.h */,
 				23730FCB1F39561C00B1B3BD /* ViewController.m */,
+				237310311F39987900B1B3BD /* StockChatCell.h */,
+				237310321F39987900B1B3BD /* StockChatCell.m */,
+				237310341F39A12900B1B3BD /* WYStockTopBarView.h */,
+				237310351F39A12900B1B3BD /* WYStockTopBarView.m */,
+				237310371F39A68600B1B3BD /* WYHorScreenView.h */,
+				237310381F39A68600B1B3BD /* WYHorScreenView.m */,
+				2373102B1F398A5200B1B3BD /* Common.h */,
+				2373102C1F398A5200B1B3BD /* Common.m */,
+				2373102E1F398B3800B1B3BD /* StockDataModel.h */,
+				2373102F1F398B3800B1B3BD /* StockDataModel.m */,
 				23730FCD1F39561C00B1B3BD /* Main.storyboard */,
 				23730FD01F39561C00B1B3BD /* Assets.xcassets */,
 				23730FD21F39561C00B1B3BD /* LaunchScreen.storyboard */,
 				23730FD51F39561C00B1B3BD /* Info.plist */,
 				23730FC41F39561C00B1B3BD /* Supporting Files */,
+				23730FF71F39569500B1B3BD /* PrefixHeader.pch */,
+				2373102A1F3989BB00B1B3BD /* PublicDefine.h */,
 			);
 			path = MYLStockDemo;
 			sourceTree = "<group>";
@@ -140,6 +223,76 @@
 			path = MYLStockDemoUITests;
 			sourceTree = "<group>";
 		};
+		2373103A1F39B52B00B1B3BD /* KLineView */ = {
+			isa = PBXGroup;
+			children = (
+				2373103B1F39B52B00B1B3BD /* KLine */,
+				237310421F39B52B00B1B3BD /* KLineListTransformer.h */,
+				237310431F39B52B00B1B3BD /* KLineListTransformer.m */,
+				237310441F39B52B00B1B3BD /* TipViews */,
+				237310471F39B52B00B1B3BD /* TLine */,
+			);
+			path = KLineView;
+			sourceTree = "<group>";
+		};
+		2373103B1F39B52B00B1B3BD /* KLine */ = {
+			isa = PBXGroup;
+			children = (
+				2373103C1F39B52B00B1B3BD /* KLineChartView.h */,
+				2373103D1F39B52B00B1B3BD /* KLineChartView.m */,
+				2373103E1F39B52B00B1B3BD /* KLineTipBoardView.h */,
+				2373103F1F39B52B00B1B3BD /* KLineTipBoardView.m */,
+				237310401F39B52B00B1B3BD /* MATipView.h */,
+				237310411F39B52B00B1B3BD /* MATipView.m */,
+			);
+			path = KLine;
+			sourceTree = "<group>";
+		};
+		237310441F39B52B00B1B3BD /* TipViews */ = {
+			isa = PBXGroup;
+			children = (
+				237310451F39B52B00B1B3BD /* TipBoardView.h */,
+				237310461F39B52B00B1B3BD /* TipBoardView.m */,
+			);
+			path = TipViews;
+			sourceTree = "<group>";
+		};
+		237310471F39B52B00B1B3BD /* TLine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TLine;
+			sourceTree = "<group>";
+		};
+		237310481F39B52B00B1B3BD /* KTimeView */ = {
+			isa = PBXGroup;
+			children = (
+				237310491F39B52B00B1B3BD /* UIBezierPath+curved.h */,
+				2373104A1F39B52B00B1B3BD /* UIBezierPath+curved.m */,
+				2373104B1F39B52B00B1B3BD /* YKLineChart.h */,
+				2373104C1F39B52B00B1B3BD /* YKLineChartViewBase.h */,
+				2373104D1F39B52B00B1B3BD /* YKLineChartViewBase.m */,
+				2373104E1F39B52B00B1B3BD /* YKLineDataSet.h */,
+				2373104F1F39B52B00B1B3BD /* YKLineDataSet.m */,
+				237310501F39B52B00B1B3BD /* YKLineEntity.h */,
+				237310511F39B52B00B1B3BD /* YKLineEntity.m */,
+				237310521F39B52B00B1B3BD /* YKTimeLineView.h */,
+				237310531F39B52B00B1B3BD /* YKTimeLineView.m */,
+				237310541F39B52B00B1B3BD /* YKViewBase.h */,
+				237310551F39B52B00B1B3BD /* YKViewBase.m */,
+			);
+			path = KTimeView;
+			sourceTree = "<group>";
+		};
+		4361985216EBF8F308F3054A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EAB795E105B39B7B99DF190 /* Pods-MYLStockDemo.debug.xcconfig */,
+				66E01C24B0AACFD2C72A2AF4 /* Pods-MYLStockDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23730FEE1F39561C00B1B3BD /* Build configuration list for PBXNativeTarget "MYLStockDemo" */;
 			buildPhases = (
+				AE1AAD914502A4E7BB747BD5 /* [CP] Check Pods Manifest.lock */,
 				23730FBD1F39561C00B1B3BD /* Sources */,
 				23730FBE1F39561C00B1B3BD /* Frameworks */,
 				23730FBF1F39561C00B1B3BD /* Resources */,
+				EA4A5C98666F1AF2BC874725 /* [CP] Embed Pods Frameworks */,
+				DFE34BC95E66D7F593F3A2F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23730FD41F39561C00B1B3BD /* LaunchScreen.storyboard in Resources */,
+				23730FF91F39602400B1B3BD /* dataSource.plist in Resources */,
 				23730FD11F39561C00B1B3BD /* Assets.xcassets in Resources */,
 				23730FCF1F39561C00B1B3BD /* Main.storyboard in Resources */,
 			);
@@ -271,14 +428,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE1AAD914502A4E7BB747BD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFE34BC95E66D7F593F3A2F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MYLStockDemo/Pods-MYLStockDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4A5C98666F1AF2BC874725 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MYLStockDemo/Pods-MYLStockDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23730FBD1F39561C00B1B3BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237310331F39987900B1B3BD /* StockChatCell.m in Sources */,
 				23730FCC1F39561C00B1B3BD /* ViewController.m in Sources */,
+				237310581F39B52B00B1B3BD /* MATipView.m in Sources */,
+				2373105F1F39B52B00B1B3BD /* YKTimeLineView.m in Sources */,
+				2373105E1F39B52B00B1B3BD /* YKLineEntity.m in Sources */,
+				2373105A1F39B52B00B1B3BD /* TipBoardView.m in Sources */,
+				237310591F39B52B00B1B3BD /* KLineListTransformer.m in Sources */,
 				23730FC91F39561C00B1B3BD /* AppDelegate.m in Sources */,
+				237310301F398B3800B1B3BD /* StockDataModel.m in Sources */,
+				237310391F39A68600B1B3BD /* WYHorScreenView.m in Sources */,
+				2373105B1F39B52B00B1B3BD /* UIBezierPath+curved.m in Sources */,
 				23730FC61F39561C00B1B3BD /* main.m in Sources */,
+				2373105C1F39B52B00B1B3BD /* YKLineChartViewBase.m in Sources */,
+				2373102D1F398A5200B1B3BD /* Common.m in Sources */,
+				237310601F39B52B00B1B3BD /* YKViewBase.m in Sources */,
+				2373105D1F39B52B00B1B3BD /* YKLineDataSet.m in Sources */,
+				237310571F39B52B00B1B3BD /* KLineTipBoardView.m in Sources */,
+				237310361F39A12900B1B3BD /* WYStockTopBarView.m in Sources */,
+				237310561F39B52B00B1B3BD /* KLineChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,9 +646,11 @@
 		};
 		23730FEF1F39561C00B1B3BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB795E105B39B7B99DF190 /* Pods-MYLStockDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7ZAD5728G2;
+				GCC_PREFIX_HEADER = /Users/myl/Desktop/MYLStockDemo/MYLStockDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = MYLStockDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyjf.MYLStockDemo;
@@ -437,9 +660,11 @@
 		};
 		23730FF01F39561C00B1B3BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66E01C24B0AACFD2C72A2AF4 /* Pods-MYLStockDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7ZAD5728G2;
+				GCC_PREFIX_HEADER = /Users/myl/Desktop/MYLStockDemo/MYLStockDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = MYLStockDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyjf.MYLStockDemo;
@@ -516,6 +741,7 @@
 				23730FF01F39561C00B1B3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23730FF11F39561C00B1B3BD /* Build configuration list for PBXNativeTarget "MYLStockDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +750,7 @@
 				23730FF31F39561C00B1B3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23730FF41F39561C00B1B3BD /* Build configuration list for PBXNativeTarget "MYLStockDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +759,7 @@
 				23730FF61F39561C00B1B3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
