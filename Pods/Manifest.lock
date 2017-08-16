@@ -1,18 +1,21 @@
 PODS:
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
   - SDAutoLayout (2.1.7)
 
 DEPENDENCIES:
   - Masonry
   - MJExtension
+  - MJRefresh
   - SDAutoLayout (~> 2.1.7)
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
 
-PODFILE CHECKSUM: 4b8068f219d3905ac890def85c156fae31d64be9
+PODFILE CHECKSUM: 2c979bdad7986e428dd7f79456f459fee7eca375
 
 COCOAPODS: 1.2.1.rc.1

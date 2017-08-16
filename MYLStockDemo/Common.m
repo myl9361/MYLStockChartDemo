@@ -212,6 +212,10 @@
         stock = [StockDataModel mj_objectWithKeyValues:dict[@"result"][@"detail"][@"stockMarket"]];
         
         stock.timeDetailArr = dict[@"result"][@"everyTrade"];
+        
+        /*
+         五档图的数据
+         */
         stock.volsell = @[[Common fiveViewMakeWithNum:stock.sell1_n] ,
                                [Common fiveViewMakeWithNum:stock.sell2_n],
                                [Common fiveViewMakeWithNum:stock.sell3_n],

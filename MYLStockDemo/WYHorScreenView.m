@@ -10,6 +10,7 @@
 #import "WYStockTopBarView.h"
 #import "KLineChartView.h"
 #import "KLineListTransformer.h"
+#import "WYFigureFiveView.h"
 #define BTN_TAG  4785474
 @interface WYHorScreenView ()<YKLineChartViewDelegate,KLineChartViewdelegate>
 
@@ -27,11 +28,13 @@
 
 @property (nonatomic,strong)NSMutableArray     *topViewArr;
 
-@property (nonatomic,strong)UIView            *bottomView;
+@property (nonatomic,strong)UIView             *bottomView;
 
-@property (nonatomic,assign)NSInteger         lastSelect;
+@property (nonatomic,assign)NSInteger          lastSelect;
 
-@property (nonatomic,strong)UILabel           *topTimeLabel;
+@property (nonatomic,strong)UILabel            *topTimeLabel;
+
+@property (nonatomic,strong)WYFigureFiveView   *figFiveView;
 
 @end
 
@@ -41,7 +44,11 @@
 - (id)initWithFrame:(CGRect)frame SelecIndex:(NSInteger)selectIndex{
     if (self = [super initWithFrame:frame]) {
         [self initBottomView];
-    
+        
+        _figFiveView = [[WYFigureFiveView alloc]init];
+        _figFiveView.backgroundColor = [UIColor clearColor];
+        [self addSubview:_figFiveView];
+        
         if (!_KineDataArr) {
             _KineDataArr = [[NSMutableArray alloc]init];
            
@@ -242,6 +249,9 @@
             
         }else
         {
+            //移除打牌屏幕外面
+              _figFiveView.frame = CGRectMake(kScreenHeight+100, 0, 0, 0);
+            
             [self.timeLineView removeFromSuperview];
             [self initKineView];
             
@@ -372,7 +382,8 @@
     if (!self.timeLineView) {
         self.timeLineView = [[YKTimeLineView alloc]init];
     }
-    self.timeLineView.frame = CGRectMake(10, WH_SCALE(85+27), kScreenHeight - 20.0f-10,kScreenWidth-WH_SCALE(95+27));
+    self.timeLineView.frame = CGRectMake(10, WH_SCALE(85+27), kScreenHeight - 20.0f-(self.isHaveFigFive&&self.selectIndex==0?WH_SCALE(130):10),kScreenWidth-WH_SCALE(95+27));
+    
     self.timeLineView.gridBackgroundColor = [UIColor whiteColor];
     self.timeLineView.borderColor = [UIColor colorWithRed:203/255.0 green:215/255.0 blue:224/255.0 alpha:1.0];
     self.timeLineView.borderWidth = .5;
@@ -405,6 +416,15 @@
     [self  addSubview:self.timeLineView];
     self.timeSet = set;
     [self.timeLineView setupData:self.timeSet];
+    
+    //五档图
+    if (self.isHaveFigFive) {
+        _figFiveView.frame = CGRectMake(kScreenHeight-WH_SCALE(130)-10, WH_SCALE(85+27), WH_SCALE(130),kScreenWidth-WH_SCALE(95+27));
+        _figFiveView.stock = self.stock;
+        
+    }else{
+        _figFiveView.frame = CGRectMake(kScreenHeight+100, 0, 0, 0);
+    }
     
 }
 

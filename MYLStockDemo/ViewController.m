@@ -27,6 +27,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    /*
+     新增加五档图  isHaveFigFive:可控制是否需要显示
+     五档图的数据是从stock model里面获得的 stock.volsell  stock.volbuy
+     明细数据是在五档图的自定义界面重新请求的
+     */
+    
     /*
      1、项目是在另外的第三方基础的上修改完成
      2、项目的分时、k线视图 每次滑动topbar的时候为移除视图重新添加，可能会损耗app性能，如有需要可做成scrollview添加到不同contentOffset上,自行修改吧 ...
@@ -130,6 +137,7 @@
     }
     cell.selecIndex = self.selectIndex;
     cell.stock = self.stock;
+    cell.isHaveFigFive = YES;
     if (self.dataArr.count!=0) {
         [cell addDataWithKIineDataArr:self.dataArr];
     }

@@ -10,6 +10,7 @@
 #import "KLineChartView.h"
 #import "KLineListTransformer.h"
 #import "WYHorScreenView.h"
+#import "WYFigureFiveView.h"
 @interface StockChatCell ()<YKLineChartViewDelegate>
 
 @property (nonatomic, strong) KLineListTransformer *lineListTransformer;
@@ -19,6 +20,8 @@
 @property (nonatomic, strong)YKTimeDataset           *timeSet;
 @property (nonatomic, strong)UIButton                *showHorControl;
 @property (nonatomic, assign)CGFloat                 viewHeight;
+@property (nonatomic, strong)WYFigureFiveView        *figFiveView;
+
 @end
 @implementation StockChatCell
 
@@ -37,6 +40,14 @@
         self.showHorControl .frame = CGRectMake(0, 0, kScreenWidth,_viewHeight);
         [self.showHorControl addTarget:self action:@selector(showHorScreen) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:self.showHorControl];
+        
+        /*
+         五档图
+         */
+        _figFiveView  = [[WYFigureFiveView alloc]init];
+        _figFiveView.backgroundColor = [UIColor clearColor];
+        [self.contentView addSubview:_figFiveView];
+
     }
     return self;
 }
@@ -98,6 +109,10 @@
         /*
          k线数据 解析
          */
+        
+        //k线移除屏幕外 不需要五档明细
+         _figFiveView.frame = CGRectMake(kScreenWidth+100, 0, 0, 0);
+        
         [self.timeLineView removeFromSuperview];
         [self initKineView];
         
@@ -128,7 +143,9 @@
     
     [self.contentView addSubview:self.kLineChartView];
     [self setupAutoHeightWithBottomView:self.timeLineView bottomMargin:5];
+    
     //添加点击全屏手势
+     self.showHorControl.frame = CGRectMake(0, 0, kScreenWidth, _viewHeight);
     [self.contentView bringSubviewToFront:self.showHorControl];
 }
 
@@ -181,9 +198,19 @@
     
     self.timeLineView.sd_layout
     .leftSpaceToView(self.contentView, 10)
-    .rightSpaceToView(self.contentView, 10)
+    .rightSpaceToView(self.contentView, self.isHaveFigFive&&self.selecIndex==0?WH_SCALE(120):10)
     .topSpaceToView(self.contentView,10)
     .heightIs(_viewHeight-20);
+    
+    //五档图
+    if (self.isHaveFigFive) {
+        _figFiveView.frame = CGRectMake(kScreenWidth-WH_SCALE(120), 10, WH_SCALE(120),_viewHeight-10);
+        _figFiveView.stock = self.stock;
+        self.showHorControl .frame = CGRectMake(0, 0, kScreenWidth- WH_SCALE(120), _viewHeight+WH_SCALE(5));
+        
+    }else{
+        _figFiveView.frame = CGRectMake(kScreenWidth+100, 0, 0, 0);
+    }
     
     [self setupAutoHeightWithBottomView:self.timeLineView bottomMargin:5];
     
@@ -196,6 +223,7 @@
 - (void)showHorScreen {
     
     WYHorScreenView *horScreenView = [[WYHorScreenView alloc]initWithFrame:CGRectMake(0, 0, kScreenHeight, kScreenWidth) SelecIndex:self.selecIndex];
+    horScreenView.isHaveFigFive = self.isHaveFigFive;
     horScreenView.stock = self.stock;
     [horScreenView getDataWithSelectIndex:_selecIndex];
     horScreenView.backgroundColor = [UIColor whiteColor];

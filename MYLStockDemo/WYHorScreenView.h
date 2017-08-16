@@ -12,6 +12,7 @@
 
 @property (nonatomic,strong)StockDataModel    *stock;
 
+@property (nonatomic, assign)BOOL           isHaveFigFive;//是否显示五挡图
 
 - (id)initWithFrame:(CGRect)frame SelecIndex:(NSInteger)selectIndex;
 

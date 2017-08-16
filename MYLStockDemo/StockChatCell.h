@@ -16,6 +16,8 @@
 
 @property (nonatomic, strong)StockDataModel *stock;
 
+@property (nonatomic, assign)BOOL           isHaveFigFive;//是否需要五档图
+
 //添加数据
 - (void)addDataWithKIineDataArr:(NSMutableArray *)kIineDataArr;
 

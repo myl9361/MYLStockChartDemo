@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		087D84DF9BA4607816608CD4 /* libPods-MYLStockDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 228543D54CCB535B4CAD9B20 /* libPods-MYLStockDemo.a */; };
+		234B7C1F1F44332300C87561 /* detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234B7C1E1F44332300C87561 /* detail.plist */; };
+		234B7C221F44335B00C87561 /* WYFigureFiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B7C211F44335B00C87561 /* WYFigureFiveView.m */; };
+		234B7C251F44374200C87561 /* WYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B7C241F44374200C87561 /* WYUser.m */; };
 		23730FC61F39561C00B1B3BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23730FC51F39561C00B1B3BD /* main.m */; };
 		23730FC91F39561C00B1B3BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23730FC81F39561C00B1B3BD /* AppDelegate.m */; };
 		23730FCC1F39561C00B1B3BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23730FCB1F39561C00B1B3BD /* ViewController.m */; };
@@ -54,6 +57,11 @@
 
 /* Begin PBXFileReference section */
 		228543D54CCB535B4CAD9B20 /* libPods-MYLStockDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYLStockDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		234B7C1E1F44332300C87561 /* detail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = detail.plist; path = KTimeView/detail.plist; sourceTree = "<group>"; };
+		234B7C201F44335B00C87561 /* WYFigureFiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYFigureFiveView.h; sourceTree = "<group>"; };
+		234B7C211F44335B00C87561 /* WYFigureFiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYFigureFiveView.m; sourceTree = "<group>"; };
+		234B7C231F44374200C87561 /* WYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYUser.h; sourceTree = "<group>"; };
+		234B7C241F44374200C87561 /* WYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYUser.m; sourceTree = "<group>"; };
 		23730FC11F39561C00B1B3BD /* MYLStockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYLStockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23730FC51F39561C00B1B3BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23730FC71F39561C00B1B3BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +180,9 @@
 				2373103A1F39B52B00B1B3BD /* KLineView */,
 				237310481F39B52B00B1B3BD /* KTimeView */,
 				23730FF81F39602400B1B3BD /* dataSource.plist */,
+				234B7C1E1F44332300C87561 /* detail.plist */,
+				234B7C231F44374200C87561 /* WYUser.h */,
+				234B7C241F44374200C87561 /* WYUser.m */,
 				23730FC71F39561C00B1B3BD /* AppDelegate.h */,
 				23730FC81F39561C00B1B3BD /* AppDelegate.m */,
 				23730FCA1F39561C00B1B3BD /* ViewController.h */,
@@ -182,6 +193,8 @@
 				237310351F39A12900B1B3BD /* WYStockTopBarView.m */,
 				237310371F39A68600B1B3BD /* WYHorScreenView.h */,
 				237310381F39A68600B1B3BD /* WYHorScreenView.m */,
+				234B7C201F44335B00C87561 /* WYFigureFiveView.h */,
+				234B7C211F44335B00C87561 /* WYFigureFiveView.m */,
 				2373102B1F398A5200B1B3BD /* Common.h */,
 				2373102C1F398A5200B1B3BD /* Common.m */,
 				2373102E1F398B3800B1B3BD /* StockDataModel.h */,
@@ -408,6 +421,7 @@
 				23730FD41F39561C00B1B3BD /* LaunchScreen.storyboard in Resources */,
 				23730FF91F39602400B1B3BD /* dataSource.plist in Resources */,
 				23730FD11F39561C00B1B3BD /* Assets.xcassets in Resources */,
+				234B7C1F1F44332300C87561 /* detail.plist in Resources */,
 				23730FCF1F39561C00B1B3BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,10 +499,12 @@
 				23730FCC1F39561C00B1B3BD /* ViewController.m in Sources */,
 				237310581F39B52B00B1B3BD /* MATipView.m in Sources */,
 				2373105F1F39B52B00B1B3BD /* YKTimeLineView.m in Sources */,
+				234B7C251F44374200C87561 /* WYUser.m in Sources */,
 				2373105E1F39B52B00B1B3BD /* YKLineEntity.m in Sources */,
 				2373105A1F39B52B00B1B3BD /* TipBoardView.m in Sources */,
 				237310591F39B52B00B1B3BD /* KLineListTransformer.m in Sources */,
 				23730FC91F39561C00B1B3BD /* AppDelegate.m in Sources */,
+				234B7C221F44335B00C87561 /* WYFigureFiveView.m in Sources */,
 				237310301F398B3800B1B3BD /* StockDataModel.m in Sources */,
 				237310391F39A68600B1B3BD /* WYHorScreenView.m in Sources */,
 				2373105B1F39B52B00B1B3BD /* UIBezierPath+curved.m in Sources */,

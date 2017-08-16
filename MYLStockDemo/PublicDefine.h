@@ -15,7 +15,8 @@
 #import "YKLineChart.h"
 #import "MJExtension.h"
 #import "SDAutoLayout.h"
-
+#import "MJRefresh.h"
+#import "WYUser.h"
 #define WEAKSELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 #define STOCK_NUM @"600004"
